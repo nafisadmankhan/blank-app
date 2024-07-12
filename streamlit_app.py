@@ -17,6 +17,9 @@ if st.button('Check availability'):
     have_it = animal.lower() in animal_shelter
     'We have that animal!' if have_it else 'We don\'t have that animal.'
 
+age = st.slider("How old are you?", 0, 130, 25)
+st.write("I'm ", age, "years old")
+
 if st.button('Generate Question'):
     st.write("Lesson 01 - Question Number: ", random_number)
     st.write("Lesson 02 - Question Number: ", random_number)
