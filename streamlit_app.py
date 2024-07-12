@@ -19,3 +19,7 @@ if st.button('Check availability'):
 
 if st.button('Generate Question'):
     "Here is the question"
+
+if st.button('Check availability'):
+    have_it = animal.lower() in animal_shelter
+    'We have that animal!' if have_it else 'We don\'t have that animal.'
